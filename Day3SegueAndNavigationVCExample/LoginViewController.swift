@@ -32,19 +32,26 @@ class LoginViewController: UIViewController {
         if(email == "a@a.com" && pwd == "123")
         {
             print("Login Success...")
-            let sb = UIStoryboard(name: "Main", bundle: nil)
-            let homeVC = sb.instantiateViewController(withIdentifier: "HomeVC") as! HomeViewController
-            homeVC.userEmail = email
-            self.navigationController?.pushViewController(homeVC, animated: true)
-            //self.present(homeVC, animated: true)
+            //steps to be done
             if(swRememberMe.isOn)
             {
+                var userDefault = UserDefaults.standard                       //UserDefaults is singleton class
+                //store values
+                userDefault.set(email, forKey: "userEmail")
+                userDefault.set(pwd, forKey: "userPassword")
+                //
                 print("Write Code to remember/store userId/Password")
             }
             else
             {
                 print("Remove UserId/Password if previously remembered/stored")
             }
+            //move on to next screen
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let homeVC = sb.instantiateViewController(withIdentifier: "HomeVC") as! HomeViewController
+            homeVC.userEmail = email
+            self.navigationController?.pushViewController(homeVC, animated: true)
+            //self.present(homeVC, animated: true)
         }
         else
         {
