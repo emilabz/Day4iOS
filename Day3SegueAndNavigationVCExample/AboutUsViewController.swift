@@ -20,7 +20,25 @@ class AboutUsViewController: UIViewController {
         }
     }
     
-
+    @IBOutlet weak var imgType: UIImageView!
+    @IBOutlet weak var lblType: UILabel!
+    @IBAction func segChange(_ sender: UISegmentedControl) {
+        print(sender.selectedSegmentIndex)
+        switch sender.selectedSegmentIndex {
+        case 0:
+            lblType.text="Stance"
+            imgType.image=UIImage(named: "STi_Stance.jpeg")
+        case 1:
+            lblType.text="Tuner"
+            imgType.image=UIImage(named: "sti_tuner.jpeg")
+        case 2:
+            lblType.text="Time Attack"
+            imgType.image=UIImage(named: "sti_time_attack.jpg")
+        default:
+            print("Enter valid choice")
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -27,6 +27,14 @@ class HomeViewController: UIViewController {
         
         let vc = self.navigationController?.viewControllers[1] 
         self.navigationController?.popToViewController(vc!, animated: true)
+    
+        let userDefault = UserDefaults.standard
+        if let email = userDefault.string(forKey: "userEmail"){
+            print(email)
+        }
+        if let pwd = userDefault.string(forKey: "userPassword"){
+            print(pwd)
+        }
     }
     
     @IBAction func btnNextClick(_ sender: Any)

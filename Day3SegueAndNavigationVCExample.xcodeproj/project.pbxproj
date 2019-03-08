@@ -14,6 +14,9 @@
 		075C25AC22308CAA00C96506 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 075C25AA22308CAA00C96506 /* LaunchScreen.storyboard */; };
 		075C25B422308CD900C96506 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075C25B322308CD900C96506 /* HomeViewController.swift */; };
 		075C25B622309FDB00C96506 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075C25B522309FDB00C96506 /* AboutUsViewController.swift */; };
+		9B909DA22231ED690090D57E /* STi_Stance.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B909DA12231ED690090D57E /* STi_Stance.jpeg */; };
+		9B909DA52231EFB50090D57E /* sti_tuner.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B909DA32231EFB50090D57E /* sti_tuner.jpeg */; };
+		9B909DA62231EFB50090D57E /* sti_time_attack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B909DA42231EFB50090D57E /* sti_time_attack.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		075C25AD22308CAA00C96506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		075C25B322308CD900C96506 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		075C25B522309FDB00C96506 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		9B909DA12231ED690090D57E /* STi_Stance.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = STi_Stance.jpeg; path = ../../../../STi_Stance.jpeg; sourceTree = "<group>"; };
+		9B909DA32231EFB50090D57E /* sti_tuner.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sti_tuner.jpeg; path = ../../../../sti_tuner.jpeg; sourceTree = "<group>"; };
+		9B909DA42231EFB50090D57E /* sti_time_attack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sti_time_attack.jpg; path = ../../../../sti_time_attack.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				075C25AD22308CAA00C96506 /* Info.plist */,
 				075C25B322308CD900C96506 /* HomeViewController.swift */,
 				075C25B522309FDB00C96506 /* AboutUsViewController.swift */,
+				9B909DA12231ED690090D57E /* STi_Stance.jpeg */,
+				9B909DA42231EFB50090D57E /* sti_time_attack.jpg */,
+				9B909DA32231EFB50090D57E /* sti_tuner.jpeg */,
 			);
 			path = Day3SegueAndNavigationVCExample;
 			sourceTree = "<group>";
@@ -128,7 +137,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B909DA22231ED690090D57E /* STi_Stance.jpeg in Resources */,
+				9B909DA62231EFB50090D57E /* sti_time_attack.jpg in Resources */,
 				075C25AC22308CAA00C96506 /* LaunchScreen.storyboard in Resources */,
+				9B909DA52231EFB50090D57E /* sti_tuner.jpeg in Resources */,
 				075C25A922308CAA00C96506 /* Assets.xcassets in Resources */,
 				075C25A722308CA900C96506 /* Main.storyboard in Resources */,
 			);

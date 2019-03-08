@@ -16,6 +16,15 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let userDefault = UserDefaults.standard
+        if let email = userDefault.string(forKey: "userEmail"){
+            txtUserEmail.text=email
+            if let pwd = userDefault.string(forKey: "userPassword"){
+                txtUserPassword.text=pwd
+            }
+            swRememberMe.isOn=true
+        }
+        
         
     }
 
@@ -33,9 +42,10 @@ class LoginViewController: UIViewController {
         {
             print("Login Success...")
             //steps to be done
+            var userDefault = UserDefaults.standard                       //UserDefaults is singleton class
             if(swRememberMe.isOn)
             {
-                var userDefault = UserDefaults.standard                       //UserDefaults is singleton class
+
                 //store values
                 userDefault.set(email, forKey: "userEmail")
                 userDefault.set(pwd, forKey: "userPassword")
@@ -45,6 +55,8 @@ class LoginViewController: UIViewController {
             else
             {
                 print("Remove UserId/Password if previously remembered/stored")
+                userDefault.removeObject(forKey: "userEmail")
+                userDefault.removeObject(forKey: "userPassword")
             }
             //move on to next screen
             let sb = UIStoryboard(name: "Main", bundle: nil)
