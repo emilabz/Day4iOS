@@ -20,6 +20,9 @@ class AboutUsViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var progressbar: UIProgressView!
+    @IBOutlet weak var lblSlider: UILabel!
+    @IBOutlet weak var lblStepper: UILabel!
     @IBOutlet weak var imgType: UIImageView!
     @IBOutlet weak var lblType: UILabel!
     @IBAction func segChange(_ sender: UISegmentedControl) {
@@ -37,7 +40,18 @@ class AboutUsViewController: UIViewController {
         default:
             print("Enter valid choice")
         }
+    
     }
+    
+    @IBAction func stepper(_ sender: UIStepper) {
+        lblStepper.text="\(sender.value)"
+    }
+    
+    @IBAction func slider(_ sender: UISlider) {
+        lblSlider.text="\(Int(sender.value))"
+        progressbar.progress=sender.value/100
+    }
+    
     
     /*
     // MARK: - Navigation
